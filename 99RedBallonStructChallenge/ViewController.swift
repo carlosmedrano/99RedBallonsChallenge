@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var imageBallon: UIImageView!
+    @IBOutlet weak var ballonNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +22,18 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func nextRandomBallonButtonPressed(sender: UIBarButtonItem) {
+        
+        var currentBallon:[ballon] = []
+        currentBallon = ballon.createBallons(99)
+        
+        
+        
+        //imageBallon.image = currentBallon.ballonImage
+        //ballonNumberLabel.text = "Ballon: \(currentBallon.ballonNumber)"
     }
 
 

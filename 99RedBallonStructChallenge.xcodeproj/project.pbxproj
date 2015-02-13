@@ -18,7 +18,7 @@
 		CB37F02C1A847F890031EE18 /* RedBalloon2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB37F0271A847F890031EE18 /* RedBalloon2.jpg */; };
 		CB37F02D1A847F890031EE18 /* RedBalloon3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB37F0281A847F890031EE18 /* RedBalloon3.jpg */; };
 		CB37F02E1A847F890031EE18 /* RedBalloon4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB37F0291A847F890031EE18 /* RedBalloon4.jpg */; };
-		CB37F0301A8482450031EE18 /* ballon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F02F1A8482450031EE18 /* ballon.swift */; };
+		CB37F0301A8482450031EE18 /* balloon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB37F02F1A8482450031EE18 /* balloon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,7 @@
 		CB37F0271A847F890031EE18 /* RedBalloon2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon2.jpg; sourceTree = "<group>"; };
 		CB37F0281A847F890031EE18 /* RedBalloon3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon3.jpg; sourceTree = "<group>"; };
 		CB37F0291A847F890031EE18 /* RedBalloon4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RedBalloon4.jpg; sourceTree = "<group>"; };
-		CB37F02F1A8482450031EE18 /* ballon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ballon.swift; sourceTree = "<group>"; };
+		CB37F02F1A8482450031EE18 /* balloon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = balloon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				CB37F0041A847F1E0031EE18 /* AppDelegate.swift */,
 				CB37F0061A847F1E0031EE18 /* ViewController.swift */,
 				CB37F0081A847F1E0031EE18 /* Main.storyboard */,
-				CB37F02F1A8482450031EE18 /* ballon.swift */,
+				CB37F02F1A8482450031EE18 /* balloon.swift */,
 				CB37F00B1A847F1E0031EE18 /* Images.xcassets */,
 				CB37F00D1A847F1E0031EE18 /* LaunchScreen.xib */,
 				CB37F0021A847F1E0031EE18 /* Supporting Files */,
@@ -243,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB37F0301A8482450031EE18 /* ballon.swift in Sources */,
+				CB37F0301A8482450031EE18 /* balloon.swift in Sources */,
 				CB37F0071A847F1E0031EE18 /* ViewController.swift in Sources */,
 				CB37F0051A847F1E0031EE18 /* AppDelegate.swift in Sources */,
 			);
@@ -439,6 +439,7 @@
 				CB37F0201A847F1E0031EE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB37F0211A847F1E0031EE18 /* Build configuration list for PBXNativeTarget "99RedBallonStructChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +448,7 @@
 				CB37F0231A847F1E0031EE18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

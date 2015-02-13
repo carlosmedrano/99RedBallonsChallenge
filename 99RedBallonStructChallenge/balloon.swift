@@ -9,15 +9,15 @@
 import Foundation
 import UIKit
 
-struct ballon {
+struct Balloon {
     var ballonNumber:Int = 0
     var ballonImage = UIImage(named:"")
     
-    func createBallons(number: Int) -> [ballon]{
+    func createBalloon(number: Int) -> [Balloon]{
         
-        var myBallons:[ballon] = []
+        var myBalloons:[Balloon] = []
         var randomImageNumber = 0
-        var xBallon = ballon()
+        var xBalloon = Balloon()
         
         for x in 0...number{
             
@@ -25,25 +25,27 @@ struct ballon {
             
             switch randomImageNumber {
             case 1:
-                xBallon.ballonImage = UIImage(named: "RedBalloon1.jpg")
+                xBalloon.ballonImage = UIImage(named: "RedBalloon1.jpg")
             case 2:
-                xBallon.ballonImage = UIImage(named: "RedBalloon2.jpg")
+                xBalloon.ballonImage = UIImage(named: "RedBalloon2.jpg")
             case 3:
-                xBallon.ballonImage = UIImage(named: "RedBalloon3.jpg")
+                xBalloon.ballonImage = UIImage(named: "RedBalloon3.jpg")
             case 4:
-                xBallon.ballonImage = UIImage(named: "RedBalloon4.jpg")
+                xBalloon.ballonImage = UIImage(named: "RedBalloon4.jpg")
             default:
-                xBallon.ballonImage = UIImage(named: "BerlinTVTower.jpg")
+                xBalloon.ballonImage = UIImage(named: "BerlinTVTower.jpg")
             }
             
-            xBallon.ballonNumber = x + 1
+            xBalloon.ballonNumber = x + 1
             
-            myBallons += [xBallon]
+            myBalloons += [xBalloon]
  
         }
-    
-        return myBallons
+        
+           
+        return myBalloons
     }
+    
     
     
 }

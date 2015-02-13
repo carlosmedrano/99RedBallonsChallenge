@@ -14,9 +14,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageBallon: UIImageView!
     @IBOutlet weak var ballonNumberLabel: UILabel!
     
+    var currentBalloon:[Balloon] = []
+    var myBalloon = Balloon()
+    var randomBalloon = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        currentBalloon = myBalloon.createBalloon(99)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,16 +33,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Create a Balloon's array
+    
+    
     
     @IBAction func nextRandomBallonButtonPressed(sender: UIBarButtonItem) {
         
-        var currentBallon:[ballon] = []
-        currentBallon = ballon.createBallons(99)
         
+        randomBalloon = Int(arc4random_uniform(UInt32(98)))
         
+        imageBallon.image = currentBalloon[randomBalloon].ballonImage
+        ballonNumberLabel.text = "Balloon: \(currentBalloon[randomBalloon].ballonNumber)"
         
-        //imageBallon.image = currentBallon.ballonImage
-        //ballonNumberLabel.text = "Ballon: \(currentBallon.ballonNumber)"
     }
 
 
